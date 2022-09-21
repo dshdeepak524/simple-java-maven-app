@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools { 
+       maven 'maven354'
+    }
     stages {
         stage('Build') {
             steps {
